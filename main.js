@@ -4,13 +4,13 @@ video=createCapture(VIDEO);
 video.size(800,800);
 
 canvas = createCanvas(700,700);
-canvas.position(900,300);
+canvas.position(800,200);
 poseNet = ml5.poseNet(video,modelLoaded);
 poseNet.on('pose',gotPoses);
 }
 function draw()
 {
-    background('#FF7538');
+    background('#FFDF00');
 }
 function modelLoaded()
 {
